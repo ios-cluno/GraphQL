@@ -1,0 +1,7 @@
+mutation AddDriversLicenseDocuments($cnId: String!, $files: [String]!) {
+    addDriversLicenseDocuments(cnId: $cnId, files: $files) {
+        cnId,
+        message,
+        errors
+    }
+}

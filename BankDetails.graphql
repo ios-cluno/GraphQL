@@ -1,0 +1,7 @@
+mutation UpdateBankDetails($cnId: String!, $bankDetails: BankDetailsInput!){
+    updateBankDetails(cnId: $cnId, bankDetails: $bankDetails){
+        cnId,
+        message,
+        errors
+    }
+}

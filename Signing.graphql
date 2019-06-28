@@ -1,0 +1,7 @@
+mutation SignDeal($cnId: String!, $dealId: String!, $file: String) {
+    signDeal(cnId: $cnId, dealId: $dealId, file: $file){
+        cnId,
+        message,
+        errors
+    }
+}

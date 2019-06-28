@@ -1,0 +1,11 @@
+mutation addDealRequest($cnId: String!, $offerId: String!, $desiredDateOfDelivery: String!, $bookableOptions: [String],
+$note: String, $dateOfInitialContact: String!, $trackingCampaign: String, $trackingContent: String, $trackingMedium: String, $trackingPlatform: String, $trackingReferrer: String, $trackingSource: String, $trackingTerm: String) {
+
+addRequest(cnId: $cnId, offerId: $offerId, desiredDateOfDelivery: $desiredDateOfDelivery, bookableOptions: $bookableOptions,
+note: $note, dateOfInitialContact: $dateOfInitialContact, trackingCampaign: $trackingCampaign, trackingContent: $trackingContent, trackingMedium: $trackingMedium, trackingPlatform: $trackingPlatform, trackingReferrer: $trackingReferrer, trackingSource: $trackingSource, trackingTerm: $trackingTerm){
+cnId,
+message,
+errors
+}
+
+}

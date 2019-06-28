@@ -1,0 +1,88 @@
+query User($id: String!){
+  user(id: $id){
+  id,
+  salutation,
+  academicTitle,
+  firstname,
+  lastname,
+  email,
+  phone,
+  imageUrl,
+  driversLicenseUrl,
+  isPerson,
+  employmentType,
+  needsProofOfOtherIncome,
+  hasProofOfOtherIncome,
+  hasBankDetails,
+  hasDriversLicense,
+  hasProofOfIncome,
+  hasIdentityProof,
+  newsletterSubscribed,
+  hasScoring,
+  scoring {
+        result,
+        suffices
+        },
+  mailingAddress {
+        street,
+        postalCode,
+        city,
+        country
+        },
+  bankDetails {
+        alternateBankingAccountHolder,
+        iban,
+        bic
+        },
+  deals {
+        id,
+        status,
+        desiredDateOfDelivery,
+        monthlyRate,
+        bookableOptions,
+        isSigned,
+        phase,
+        offer {
+                id,
+                make,
+                model,
+                version,
+                teaserImage,
+                startingFee
+                portfolio
+                },
+        date,
+        dealNumber,
+        bookings {
+            id,
+            status,
+            startDate,
+            endDate,
+            includedMonthlyKilometers,
+            typeOfDelivery,
+            estimatedDeliveryDate,
+            placeOfDelivery,
+            typeOfReturn,
+            dateOfReturn,
+            placeOfReturn,
+            pricePerExcessKilometerGross,
+            handoverCertificate,
+            monthlyRate,
+            vehicle {
+                id,
+                licensePlate,
+                make,
+                model,
+                version,
+                ps,
+                kw,
+                fuelType,
+                gearingType,
+                carImage,
+                manuals
+                }
+          }
+          },
+   errors
+        }
+  }

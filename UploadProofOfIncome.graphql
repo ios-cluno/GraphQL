@@ -1,0 +1,7 @@
+mutation AddProofOfIncomeDocuments($cnId: String!, $files: [String]!) {
+    addProofOfIncomeDocuments(cnId: $cnId, files: $files) {
+        cnId,
+        message,
+        errors
+    }
+}

@@ -1,0 +1,10 @@
+mutation StartIdentityProofProcess($cnId: String!, $identityProofType: String!){
+    startIdentityProofProcess(cnId: $cnId, identityProofType: $identityProofType){
+        cnId,
+        urlAndroid,
+        urlWeb,
+        referenceNumber,
+        message,
+        errors
+    }
+}

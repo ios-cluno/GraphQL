@@ -1,0 +1,9 @@
+query SchufaResult($id: String!) {
+  user(id: $id) {
+    id
+    hasScoring
+    scoring {
+      result
+    }
+  }
+}

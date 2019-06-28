@@ -1,0 +1,7 @@
+mutation RequestUploadUrl($cnId: String!, $type: String!, $name: String!) {
+    createUploadSignedUrl(cnId: $cnId, type: $type, name: $name){
+        signedUrl,
+        message,
+        errors
+    }
+}
